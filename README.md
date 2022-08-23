@@ -69,3 +69,7 @@ Post Body
     "BitbucketUser" : "sunsbot"
 }
 ```
+
+## Deployment
+
+This project auto deploys on a merge or push to the `master` branch, the app url is https://bitbucket-auto-merge-m3rbwjxm5q-uc.a.run.app/ the project it deploys to is `zesty-dev`
