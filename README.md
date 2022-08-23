@@ -1,6 +1,6 @@
 # BitBucket Auto Merge
 
-Use BitBucket's API to automatically create and merge pull requests. This is useful for triggering build processes from CMS webhooks.
+Use BitBucket's API to automatically create and merge pull requests. This is useful for triggering build processes from CMS webhooks. 
 
 Required arguments:
 * `-s | --source`           Source git branch to create pull request from.
