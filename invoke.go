@@ -38,7 +38,15 @@ type ScriptBody struct {
 	BitbucketUser    string
 }
 
+func enableCors(w *http.ResponseWriter) {
+	(*w).Header().Set("Access-Control-Allow-Origin", "*")
+	(*w).Header().Set("Access-Control-Allow-Methods", "GET, POST")
+	(*w).Header().Set("Access-Control-Allow-Headers", "*")
+}
+
 func scriptHandler(w http.ResponseWriter, r *http.Request) {
+
+	enableCors(&w)
 
 	log.Println("running bit bucket automerge script")
 
